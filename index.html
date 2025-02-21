@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Lexi Mastin">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-        <title>DM Support</title>
+        <meta name="description" content="A handy tool for Dungeon Masters to keep track of initiative, find new encounters, or take notes all in one place!">
+        <meta name="keywords" content="dnd, dungeons and dragons, dm, dungeon master, dice, d20, initiative, enemy encounters, roll playing">
+        <title>Dungeon Master Support</title>
 
         <!--    TWITTER CARD    -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@dmsupport">
         <meta name="twitter:creator" content="@dmsupport">
-        <meta name="twitter:title" content="DM Support">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:image" content="">
+        <meta name="twitter:title" content="Dungeon Master Support">
+        <meta name="twitter:description" content="A handy tool for Dungeon Masters to keep track of initiative, find new encounters, or take notes all in one place!">
+        <meta name="twitter:image" content="./images/dice-twenty-faces-one-red.svg">
 
         <!--    OPEN GRAPH    -->
-    <meta property="og:title" content="">
+        <meta property="og:title" content="Dungeon Master Support">
         <meta property="og:type" content="website">
-    <meta property="og:image" content="">
+        <meta property="og:image" content="./images/dice-twenty-faces-one-red.svg">
         <meta property="og:url" content="https://dmsupport.com">
-    <meta property="og:description" content="">
+        <meta property="og:description" content="A handy tool for Dungeon Masters to keep track of initiative, find new encounters, or take notes all in one place!">
 
         <!--    FAVICON    -->
-<link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="./images/d20-red-favicon.ico">
 
         <!--    FONTS    -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         
         <link href="styles.css" rel="stylesheet">
         <script src="script.js" async></script>
@@ -37,72 +37,90 @@
     <body>
         <a id="skip" href="#main">Skip to Main Content</a>
         <header>
-            <h1>DM Support</h1>
+            <div id="logo">
+                <h1>Dungeon Master Support</h1>
+                <img src="./images/dice-twenty-faces-one-red.svg" alt="red d20 showing a rolled 1" width="100px">
+            </div>
             <nav>
                 <h2>Main Navigation</h2>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn"></label>
                 <ul>
-                    <li><a href="#initiative">Initiative Tracker</a></li>
-                    <li><a href="#">Encounter Generator</a></li>
-                    <li><a href="#">Notes</a></li>
+                    <li><a href="#initiative">Initiative</a></li>
+                    <li><a href="#encounters">Encounters</a></li>
+                    <li><a href="#notes">Notes</a></li>
                 </ul>
             </nav>
         </header>
         <main id="#main">
             <section id="initiative">
-                <h2>Initiative Tracker</h2>
-                <p>Add players and input their roll or add enemies and roll for them!</p>
+                <h3>Initiative Tracker</h3>
+                <img src="./images/sword-cross.svg" alt="icon of two swords crossed" width="100px">
+                <p>Enter rolled numbers on the left or click the dice below to roll a d20 and add a new character. Keep track of health on the right!</p>
                 <table>
                     <tr>
-                        <td>Row1 cell1</td>
-                        <td>Row1 name</td>
-                        <td>Row1 health</td>
+                        <td>1</td>
+                        <td>Enter Name</td>
+                        <td>00</td>
                     </tr>
                     <tr>
-                        <td>Row2 cell1</td>
-                        <td>Row2 name</td>
-                        <td>Row2 health</td>
+                        <td>2</td>
+                        <td>Enter Name</td>
+                        <td>00</td>
                     </tr>
                     <tr>
-                        <td>Row3 cell1</td>
-                        <td>Row3 name</td>
-                        <td>Row3 health</td>
+                        <td>3</td>
+                        <td>Enter Name</td>
+                        <td>00</td>
                     </tr>
                     <tr>
-                        <td>Row4 cell1</td>
-                        <td>Row4 name</td>
-                        <td>Row4 health</td>
+                        <td>4</td>
+                        <td>Enter Name</td>
+                        <td>00</td>
                     </tr>
                 </table>
                 <br>
-                <button>Roll to add!</button>
+                <h4>Roll for initiative!</h4>
+                <button><img src="./images/d20.png" alt="d20" width="150px"></button>
             </section>
-            <section id="encounter">
-                <h2>Encounter Generator</h2>
-                <p>Need a random encounter to throw at your players? Roll the dice to get a prompt!</p>
+            <section id="encounters">
+                <h3>Random Encounters</h3>
+                <img src="./images/sign-road-2-svgrepo-com.svg" alt="crossroad sign post icon" width="100px">
+                <p>Need a random encounter to throw at your players? Click the dice to get a prompt!</p>
+                <button><img src="./images/d4.png" alt="d4" width="150px"></button>
                 <section id="roll1">
-
+                    <h3>Strange Cemetery</h3>
+                    <p>You come across an ordinary looking cemetery. You see some strange movement and take a closer look just to see three turkeys circling a headstone to the point that there is a path made in the dirt around the stone. The stone itself seems normal enough, the only notable feature is the word HARRISON across the middle. Investigating may lead to an undead attack, a turkey attack, or maybe it really is just a weird occurance.</p>
+                    <img src="./images/dnd-turkey.PNG" alt="DnD creature card of a turkey">
                 </section>
                 <section id="roll2">
-
+                    <h3>Geese...?</h3>
+                    <p>You find a large pond in a clearing in the forest. The water is perfectly still yet the honking of the 50 geese surrounding the pond ruins the tranquil setting. They don't seem to notice you but interacting with the pond or attacking a goose triggers combat. You'll find that the water holds something worse than a simple goose...</p>
+                    <img src="./images/dnd-geese.PNG" alt="DnD creature card of a gaggle of geese">
                 </section>
                 <section id="roll3">
-
+                    <h3>Why is it always goblins?</h3>
+                    <p>You hear a hushed conversation coming up in front of you. You can't make out the full sentences but hear the words "ambush" and "attack" repeated several times. There's the sound of a branch snapping and the voices go silent. Four armed goblins surround you intending to attack but maybe they can be talked out of it?</p>
+                    <img src="./images/dnd-goblin.PNG" alt="DnD creature card of a goblin">
                 </section>
                 <section id="roll4">
-
+                    <h3>Blackout Riddle</h3>
+                    <p>Suddenly you lose all vision, almost as if someone put a blindfold on you. A raspy voice speaks directly in your ear but there is nothing physically there. It says "I am tall when I am young and short when I am old. What am I?" When the correct answer is guessed (a candle), vision returns as if nothing ever happened.</p>
+                    <img src="./images/dnd-candle.PNG" alt="Candle in the style of a DnD item card">
                 </section>
-                <section id="roll5">
-
-                </section>
-                <section id="roll6">
-                    
-                </section>
+            </section>
+            <section id="notes">
+                <h3>Notes</h3>
+                <img src="./images/quill-ink-svgrepo-com.svg" alt="quil in ink pot icon" width="100px">
+                <input type="text">
             </section>
         </main>
     </body>
     <footer>
-        
+        <p>Any questions? Visit https://dnd5e.info/ for reference info!</p>
+        <img src="./images/d6.png" alt="six sided die" width="100px">
+        <img src="./images/d8.png" alt="eight sided die" width="100px">
+        <img src="./images/d10.png" alt="ten sided die" width="100px">
+        <img src="./images/d12.png" alt="twelve sided die" width="100px">
     </footer>
 </html>
