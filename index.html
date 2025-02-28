@@ -42,7 +42,7 @@
                 <img src="./images/dice-twenty-faces-one-red.svg" alt="red d20 showing a rolled 1" width="100px">
             </div>
             <nav>
-                <h2>Main Navigation</h2>
+                <h2 class="sr">Main Navigation</h2>
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn"></label>
                 <ul>
@@ -54,57 +54,74 @@
         </header>
         <main id="#main">
             <section id="initiative">
-                <h3>Initiative Tracker</h3>
-                <img src="./images/sword-cross.svg" alt="icon of two swords crossed" width="100px">
-                <p>Enter rolled numbers on the left or click the dice below to roll a d20 and add a new character. Keep track of health on the right!</p>
-                <table>
-                    <tr>
-                        <td>1</td>
-                        <td>Enter Name</td>
-                        <td>00</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Enter Name</td>
-                        <td>00</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Enter Name</td>
-                        <td>00</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Enter Name</td>
-                        <td>00</td>
-                    </tr>
-                </table>
-                <br>
-                <h4>Roll for initiative!</h4>
-                <button><img src="./images/d20.png" alt="d20" width="150px"></button>
+                <div id="logo">
+                    <h3>Initiative Tracker</h3>
+                    <img src="./images/sword-cross.svg" alt="icon of two swords crossed" width="100px">
+                </div>
+                <section id="tracker">
+                    <p>Enter rolled numbers on the left or click the dice below to roll a d20 and add a new character. Keep track of health on the right!</p>
+                    <table id="intTable">
+                        <tr>
+                            <td><input type="text" placeholder="Roll"></td>
+                            <td><input type="text" placeholder="Enter Name"></td>
+                            <td><input type="text" placeholder="00"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Roll"></td>
+                            <td><input type="text" placeholder="Enter Name"></td>
+                            <td><input type="text" placeholder="00"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Roll"></td>
+                            <td><input type="text" placeholder="Enter Name"></td>
+                            <td><input type="text" placeholder="00"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Roll"></td>
+                            <td><input type="text" placeholder="Enter Name"></td>
+                            <td><input type="text" placeholder="00"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <section id="newRow">
+                        <button id="btnAdd"><svg fill="#BF3415" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" viewBox="0 0 45.402 45.402" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <g> <path d="M41.267,18.557H26.832V4.134C26.832,1.851,24.99,0,22.707,0c-2.283,0-4.124,1.851-4.124,4.135v14.432H4.141 c-2.283,0-4.139,1.851-4.138,4.135c-0.001,1.141,0.46,2.187,1.207,2.934c0.748,0.749,1.78,1.222,2.92,1.222h14.453V41.27 c0,1.142,0.453,2.176,1.201,2.922c0.748,0.748,1.777,1.211,2.919,1.211c2.282,0,4.129-1.851,4.129-4.133V26.857h14.435 c2.283,0,4.134-1.867,4.133-4.15C45.399,20.425,43.548,18.557,41.267,18.557z"/> </g> </g></svg></button>
+                        
+                        <input type="text" id="cellOne" placeholder="Roll">
+                        <input type="text" id="cellTwo" placeholder="Enter Name">
+                        <input type="text" id="cellThree" placeholder="00">
+                    </section>
+                    <div id="inRoll">
+                        <h4>Roll for initiative!</h4>
+                        <button><img src="./images/d20red.svg" alt="d20" width="150px"></button>
+                    </div>
+                </section>
             </section>
             <section id="encounters">
-                <h3>Random Encounters</h3>
-                <img src="./images/sign-road-2-svgrepo-com.svg" alt="crossroad sign post icon" width="100px">
-                <p>Need a random encounter to throw at your players? Click the dice to get a prompt!</p>
-                <button><img src="./images/d4.png" alt="d4" width="150px"></button>
-                <section id="roll1">
-                    <h3>Strange Cemetery</h3>
+                <div id="encountHead">
+                    <h3>Random Encounters</h3>
+                    <img src="./images/sign-road-2-svgrepo-com.svg" alt="crossroad sign post icon" width="100px">
+                </div>
+                <div id="dicetitle">
+                    <p>Need a random encounter to throw at your players? Click the dice to get a prompt!</p>
+                    <button id="d4roll"><img src="./images/d4red.svg" alt="d4" width="150px"></button>
+                </div>
+                <section id="roll1" class="closed">
+                    <h4>Strange Cemetery</h4>
                     <p>You come across an ordinary looking cemetery. You see some strange movement and take a closer look just to see three turkeys circling a headstone to the point that there is a path made in the dirt around the stone. The stone itself seems normal enough, the only notable feature is the word HARRISON across the middle. Investigating may lead to an undead attack, a turkey attack, or maybe it really is just a weird occurance.</p>
                     <img src="./images/dnd-turkey.PNG" alt="DnD creature card of a turkey">
                 </section>
-                <section id="roll2">
-                    <h3>Geese...?</h3>
+                <section id="roll2" class="closed">
+                    <h4>Geese...?</h4>
                     <p>You find a large pond in a clearing in the forest. The water is perfectly still yet the honking of the 50 geese surrounding the pond ruins the tranquil setting. They don't seem to notice you but interacting with the pond or attacking a goose triggers combat. You'll find that the water holds something worse than a simple goose...</p>
                     <img src="./images/dnd-geese.PNG" alt="DnD creature card of a gaggle of geese">
                 </section>
-                <section id="roll3">
-                    <h3>Why is it always goblins?</h3>
+                <section id="roll3" class="closed">
+                    <h4>Why is it always goblins?</h4>
                     <p>You hear a hushed conversation coming up in front of you. You can't make out the full sentences but hear the words "ambush" and "attack" repeated several times. There's the sound of a branch snapping and the voices go silent. Four armed goblins surround you intending to attack but maybe they can be talked out of it?</p>
                     <img src="./images/dnd-goblin.PNG" alt="DnD creature card of a goblin">
                 </section>
-                <section id="roll4">
-                    <h3>Blackout Riddle</h3>
+                <section id="roll4" class="closed">
+                    <h4>Blackout Riddle</h4>
                     <p>Suddenly you lose all vision, almost as if someone put a blindfold on you. A raspy voice speaks directly in your ear but there is nothing physically there. It says "I am tall when I am young and short when I am old. What am I?" When the correct answer is guessed (a candle), vision returns as if nothing ever happened.</p>
                     <img src="./images/dnd-candle.PNG" alt="Candle in the style of a DnD item card">
                 </section>

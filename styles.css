@@ -69,12 +69,15 @@ h1, h3, h4{
 }
 
 h1{
-	font-size: 64px;
+	font-size: 40px;
 }
 
 h3{
 	font-size:36px;
+	padding-left: 20px;
+	padding-top: 5px;
 }
+
 
 /*   HEADER   */
 
@@ -89,6 +92,9 @@ h3{
 
 header{
 	background-color:var(--white);
+	display:flex;
+	justify-content: space-between;
+	box-shadow: 0px 4px 10px #aaa ;
 }
 
 #logo{
@@ -99,34 +105,360 @@ header{
 	padding-left:50px;
 }
 
+#logo img{
+	width:100px;
+	padding-bottom: 30px;
+}
+
 h1{
-	padding-top:15px;
-	padding-left:10px;
+	padding-top:27px;
+	padding-left:15px;
+}
+
+/*   MENU   */
+
+.sr{
+	visibility: hidden;
+}
+
+nav ul{
+	display: flex;
+	padding-top: 60px;
+	padding-right: 50px;
+}
+
+li a{
+	text-decoration: none;
+	color:var(--black);
+	font-family: "Roboto Slab", serif;
+	font-size: 20px;
+	padding-right: 50px;
+}
+
+#check{
+	display: none;
 }
 
 /*   INITIATIVE   */
 
-#initiative p{
-	font-size:20px;
+#initiative{
+	padding-left: 5%;
+	padding-top: 30px;
+}
+
+#initiative img{
+	width:50px;
 }
 
 h4{
 	font-size:20px;
 }
 
+#tracker{
+	padding-top:20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	width:100%;
+}
+
+#tracker p{
+	font-size:20px;
+	width:350px;
+	padding-left: 120px;
+	line-height: 40px;
+}
+
+table{
+	margin-left:-70px;
+	margin-right: 50px;
+	border:1px solid;
+}
+
+td:nth-child(1){
+	width:100px;
+}
+
+td:nth-child(3){
+	width:100px;
+}
+
+td input{
+	height:50px;
+	width:100%;
+	text-align: center;
+}
+
+#newRow{
+	display:flex;
+	grid-column: 2;
+	grid-row:2;
+	height:50px;
+	padding-top:50px;
+	padding-right:50px;
+}
+
+#newRow button{
+	background-color: var(--cream);
+	border-color:var(--cream);
+}
+
+#newRow input{
+	text-align: center;
+	width:100%;
+}
+
+#inRoll{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+
 /*   ENCOUNTERS   */
 
 #encounters{
 	background-color:var(--grey);
+	padding-left: 5%;
+	padding-top:30px;
+	padding-bottom: 50px;
 }
 
 #encounters h3, #encounters p{
 	color:var(--white);
 }
 
-#encounters img{
-	
+#encounters h4{
+	color:var(--black);
+	font-size: 24px;
+}
+
+#encounters p{
+	font-size: 24px;
+}
+
+#encountHead{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+	padding-left: 40px;
+	padding-top: 30px;
+}
+
+#encountHead h3{
+	padding-left:15px;
+	padding-top:5px;
+}
+
+#encountHead img{
+	width: 55px;
+}
+
+#encounters #d4roll{
+	background-color: var(--grey);
+}
+
+button img{
+	width:100px;
+}
+
+#dicetitle{
+	display:grid;
+	grid-template-rows: 1fr 1fr;
+	justify-content: center;
+	padding-bottom:25px;
+}
+
+#roll1, #roll2, #roll3, #roll4{
+	background-color: var(--white);
+	width:960px;
+	height:450px;
+	margin-left:130px;
+}
+
+#roll1{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 130px 1fr;
+	border-radius: 15px;
+	padding: 30px 15px;
+}
+
+#roll1 p{
+	color:var(--black);
+	grid-column: 1/3;
+	grid-row: 2;
+	width:500px;
+	padding-left:60px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#roll1 h4{
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	align-self: center;
+}
+
+#roll1 img{
+	grid-column: 3;
+	grid-row: 1/3;
+	width:280px;
+	border:1px solid;
+	border-radius: 15px;
+	margin-right:60px;
+	margin-top:30px;
+}
+
+#roll2{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 130px 1fr;
+	border-radius: 15px;
+	padding: 20px 15px;
+}
+
+#roll2 p{
+	color:var(--black);
+	grid-column: 1;
+	grid-row: 2;
+	width:300px;
+	padding-left:30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#roll2 h4{
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	align-self: center;
+}
+
+#roll2 img{
+	grid-column: 3/5;
+	grid-row: 1/3;
+	width:580px;
+	border:1px solid;
+	border-radius: 15px;
+	margin-right:50px;
+	align-self: center;
+	margin-left:20px;
+	justify-self: center;
+}
+
+#roll3{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 130px 1fr;
+	border-radius: 15px;
+	padding: 30px 15px;
+}
+
+#roll3 p{
+	color:var(--black);
+	grid-column: 1;
+	grid-row: 2;
+	width:300px;
+	padding-left:30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#roll3 h4{
+	grid-column: 1;
+	grid-row: 1;
+	text-align: center;
+	align-self: center;
+}
+
+#roll3 img{
+	grid-column: 3/5;
+	grid-row: 1/3;
+	width:580px;
+	border:1px solid;
+	border-radius: 15px;
+	margin-right:50px;
+	align-self: center;
+	margin-left:20px;
+	justify-self: center;
+}
+
+#roll4{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 130px 1fr;
+	border-radius: 15px;
+	padding: 30px 15px;
+}
+
+#roll4 p{
+	color:var(--black);
+	grid-column: 1/3;
+	grid-row: 2;
+	width:500px;
+	padding-left:60px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+#roll4 h4{
+	grid-column: 1/3;
+	grid-row: 1;
+	text-align: center;
+	align-self: center;
+}
+
+#roll4 img{
+	grid-column: 3;
+	grid-row: 1/3;
+	width:280px;
+	border:1px solid;
+	border-radius: 15px;
+	margin-right:60px;
+}
+
+#roll1.closed, #roll2.closed, #roll3.closed, #roll4.closed{
+	display: none;
 }
 
 /*   NOTES   */
+
+
+
+/*-----------------------------------------------*/
+/*    MEDIA QUERIES    */
+
+@media (max-width:1100px){
+
+	/*    MENU    */
+
+	.checkbtn{
+		display:block;
+		order:1;
+		margin-right:20px;
+	}
+
+	ul{
+		position:fixed;
+		top:40px;
+		left:-100%;
+		background-color: var(--white);
+		width:200px;
+		height:250px;
+		display:flex;
+		flex-direction:column;
+		justify-content: center;
+		align-items:center;
+		transition: all 0.3s;
+	}
+
+	ul li{
+		margin:20px 0;
+	}
+
+	#check:checked ~ ul{
+		left:0;
+	}
+}
 
