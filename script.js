@@ -1,6 +1,6 @@
 "use strict"
 
-//INITIATIVE
+//INITIATIVE TABLE
 
 function tableAdd(){
     var table = document.getElementById("intTable");
@@ -15,6 +15,16 @@ function tableAdd(){
 }
 
 document.getElementById("btnAdd").addEventListener("click", tableAdd);
+
+//INITIATIVE RANDOM ROLL
+
+function rollTwenty(){
+    let ranNum = 1 + Math.floor(Math.random() * 20);
+    console.log(ranNum);
+}
+
+document.getElementById("d20").addEventListener("click", rollTwenty);
+
 
 //ENCOUNTER GENERATOR
 

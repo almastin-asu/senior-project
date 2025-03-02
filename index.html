@@ -92,7 +92,7 @@
                     </section>
                     <div id="inRoll">
                         <h4>Roll for initiative!</h4>
-                        <button><img src="./images/d20red.svg" alt="d20" width="150px"></button>
+                        <button id="d20"><img src="./images/d20red.svg" alt="d20" width="150px"></button>
                     </div>
                 </section>
             </section>
@@ -127,17 +127,21 @@
                 </section>
             </section>
             <section id="notes">
-                <h3>Notes</h3>
-                <img src="./images/quill-ink-svgrepo-com.svg" alt="quil in ink pot icon" width="100px">
-                <input type="text">
+                <div id="notehead">
+                    <h3>Notes</h3>
+                    <img src="./images/quill-ink-svgrepo-com.svg" alt="quil in ink pot icon" width="100px">
+                </div>
+                <textarea name="notes" rows="20" cols="30" placeholder="Begin taking notes"></textarea>
             </section>
         </main>
     </body>
     <footer>
-        <p>Any questions? Visit https://dnd5e.info/ for reference info!</p>
-        <img src="./images/d6.png" alt="six sided die" width="100px">
-        <img src="./images/d8.png" alt="eight sided die" width="100px">
-        <img src="./images/d10.png" alt="ten sided die" width="100px">
-        <img src="./images/d12.png" alt="twelve sided die" width="100px">
+        <p>Any questions? Visit <a href="https://dnd5e.info/">https://dnd5e.info/</a> for reference info!</p>
+        <div id="dice">
+            <img src="./images/d6.png" alt="six sided die" width="100px">
+            <img src="./images/d8.png" alt="eight sided die" width="100px">
+            <img src="./images/d10.png" alt="ten sided die" width="100px">
+            <img src="./images/d12.png" alt="twelve sided die" width="100px">
+        </div>
     </footer>
 </html>

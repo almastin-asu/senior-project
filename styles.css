@@ -272,7 +272,7 @@ button img{
 	background-color: var(--white);
 	width:960px;
 	height:450px;
-	margin-left:130px;
+	margin:auto;
 }
 
 #roll1{
@@ -424,7 +424,62 @@ button img{
 
 /*   NOTES   */
 
+#notes{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+}
 
+#notehead{
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	padding-left: 40px;
+	padding-top: 30px;
+	align-items: center;
+}
+
+#notehead h3{
+	margin-right: 30px;
+	padding-top:10px;
+}
+
+#notehead img{
+	width:60px;
+}
+
+textarea{
+	width: 65%;
+	height:300px;
+	font-size: 18px;
+	border-radius: 10px;
+	border:1px solid grey;
+	font-family: "Hind Guntur", sans-serif;
+	padding:10px;
+	margin: 40px auto;
+}
+
+/*    FOOTER    */
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding:30px;
+}
+
+footer p{
+	font-size: 18px;
+	padding-top:15px;
+}
+
+footer a{
+	color:var(--black);
+}
+
+footer img{
+	width:50px;
+	padding-left:15px;
+}
 
 /*-----------------------------------------------*/
 /*    MEDIA QUERIES    */
