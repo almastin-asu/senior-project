@@ -18,9 +18,12 @@ document.getElementById("btnAdd").addEventListener("click", tableAdd);
 
 //INITIATIVE RANDOM ROLL
 
+const d20 = document.getElementById("d20");
+const rollLabel = document.getElementById("rollLabel");
+
 function rollTwenty(){
     let ranNum = 1 + Math.floor(Math.random() * 20);
-    console.log(ranNum);
+    rollLabel.textContent = ranNum;
 }
 
 document.getElementById("d20").addEventListener("click", rollTwenty);
